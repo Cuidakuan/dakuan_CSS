@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*浏览器默认样式  确定页面基本可读
+			 而默认样式正常情况下不需要使用
+			 所以在编写样式之前需要将浏览器默认样式margin和padding取消
+			 
+			 */
+			*{
+				margin: 0px;
+				padding: 0px;
+			}
+			.box1{
+				width: 100px;
+				height: 100px;
+				background-color: #bfa;
+			}
+			p{
+				background-color: yellow;
+			}
+			
+			/*
+			 * 内联元素：   span
+			 * 内联元素不能设置宽和高
+			 *     wigth:(X)
+			 *     height:(X)
+			 * 内联元素支持水平方向的内边距
+			 *     padding-left:
+			 *     padding-right:
+			 * 内联元素垂直方向的内边距可以设置但是不会影页面的布局
+			 *     padding-top:(X)
+			 *     padding-right:(X)
+			 * 内联元素只支持水平方向外边距，不支持垂直方向外边距
+			 *     margin-left:
+			 *     margin-right:
+			 *     margin-top:(X)
+			 *     marhgin-bottom:(X)
+			 * 
+			 * border：可以设置边框，但垂直的边框不会影响布局
+			 * 
+			 */
+		</style>
+	</head>
+	<body>
+		<div class="box1">	
+		</div>
+		<p>我是一段文字</p>
+		<p>我是一段文字</p>
+		<p>我是一段文字</p>
+		<p>我是一段文字</p>
+		<ul>
+			<li>无序列表</li>
+			<li>无序列表</li>
+			<li>无序列表</li>
+			<li>无序列表</li>
+		</ul>
+	</body>
+</html>

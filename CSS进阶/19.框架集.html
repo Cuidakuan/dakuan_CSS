@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<!--
+			在一个页面中引入外部多个页面
+			H5中推荐使用框架集，而不使用内联框架iframe
+		-->
+		<!--
+			frameset不能和body同时存在
+			   rows指定行数
+			            行高用百分数表示
+			      *表示剩余的
+			   cols指定列数
+			            列宽用百分数表示
+			frameset 可以嵌套使用
+		--> 
+	<frameset cols="50%,50%">
+		<!--通过frame引入页面-->
+		<frame noresize="noresize" src="1.表格.html" />
+		<frame  noresize="noresize" src="2.表格样式.html" />
+	</frameset>
+</html>

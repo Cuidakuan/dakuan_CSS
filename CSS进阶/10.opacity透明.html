@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.box1{
+				width: 200px;
+				height: 200px;
+				background-color: red;
+			}
+			.box2{
+				width: 200px;
+				height: 200px;
+				background-color: greenyellow;
+			    position:absolute;
+			    left: 100px;
+			    top: 200px;
+			    /*设置元素背景的透明
+			     opacity需要0-1之间的值
+			        0全透明
+			        1不透明
+			     * */
+			    opacity: 0.5;
+			    /*
+			     IE8不支持，需要使用如下属性
+			     filter:alpha(opacity=50);*/
+			}
+			.box3{
+				width: 200px;
+				height: 200px;
+				background-color: yellow;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box1"></div>
+		<div class="box2"></div>
+		<div class="box3"></div>
+	</body>
+</html>

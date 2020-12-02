@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*为有title属性的设置背景颜色*/
+			/*p[title]{
+				background-color: red;
+			}*/
+			/*为有title属性且title值是你好的设置背景颜色*/
+		p[title="你好"]{
+				background-color: red;
+			}
+			/*以ab开头的
+			      p[title^="ab"]
+			 以c结尾
+			      p[title$="c"]
+			含有ab
+			      p[title*="ab"]
+			 */
+		
+		</style>
+	</head>
+	<body>
+		<!--title属性 可以给任何标签指定
+			title中的属性值会在鼠标移入是提示
+		-->
+		<p title="你不好">我是一段文字</p>
+		<p>我是一段文字</p>
+		<p>我是一段文字</p>
+		<p>我是一段文字</p>
+		<p>我是一段文字</p>
+		<p title="你好">我是一段文字</p>
+		
+		
+		
+		
+		
+		
+		
+		
+	</body>
+</html>

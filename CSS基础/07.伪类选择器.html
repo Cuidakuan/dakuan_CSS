@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*
+			 伪类  专门表示元素的一种特殊的状态
+			   比如访问的超链接，
+			 * */
+			/*没访问的链接设置绿色*/
+			a:link{
+				color: green;	
+			}
+			/*访问过得设置成红色
+			 visited只能设置颜色*/
+			a:visited{
+				color: red;
+			}
+			/*鼠标移入*/
+			a:hover{
+				color: blue;
+			}
+			/*表示超链接被一直点击的状态*/
+			a:active{
+				color: black;
+			}
+			/*p:hover{
+				color: green;
+			}*/
+			/*获取焦点focus
+			  文本框获取焦点后，修改背景颜色
+			 */
+			input:hover{
+				background-color:#fba;
+			
+			}
+			/*selection
+			   为p标签中选中的内容使用样式
+			 */
+			p::selection{
+				background-color: yellow;
+			}
+		</style>
+	</head>
+	<body>
+		<a href="http://www.baidu.com">访问过的链接</a>
+		<br /><br />
+	    <a href="http://www.baidu.com">没访问过的链接</a>
+	<p>我是p标签</p>
+	<input type="text" />
+	</body>
+</html>

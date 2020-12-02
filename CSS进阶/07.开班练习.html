@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			/*统一页面的字体*/
+			body{
+				font: 12px/1宋体;
+			}
+			
+			/*设置outer大小*/
+			.outer{
+				width: 300px;
+				/*height: 473px;
+				background-color: #bfa;*/
+				margin: 50px auto;
+			}
+			.title{
+				border-top:2px #019e8b solid;
+				height: 36px;
+				background-color: #f5f5f5;
+				/*设置title行高*/
+				line-height: 36px;
+				padding: 0px 22px 0px 16px;
+			}
+			.title a{
+				float: right;
+				color: red;
+				
+			}
+			.title h3{
+				
+				font: 16px/36px "微软雅黑"  ;
+			}
+			.content{
+				border: 1px solid #deddd9;
+				padding: 0px 28px 0px 20px;
+			}
+			/*设置内容中的超链接*/
+		   .content a{
+		   	font-size: 13px;
+		   	color: black;
+		   	/*去除超链接下划线*/
+		   	text-decoration: none;
+		   }
+		   .content a:hover{
+		   	color: red;
+		   	text-decoration: underline;
+		   }
+		   /*去掉ul的项目符号*/
+		   .content ul{
+		   	list-style: none;
+		   	/*为ul设置一个下边框*/
+		   	border-bottom:1px dashed #deddd9;
+		   }
+		   /*取消最后一个ul的下边框*/
+		  .content .no-border{
+		  	border: none;
+		  }
+		   .content .red{
+		   	color: red;
+		   	font-weight: bold;
+		   }
+		   .content .right{
+		   	float: right;
+		   }
+		   .content h3{
+		   	/*设置内容标题上边距*/
+		   	margin-top:10px;
+		   	margin-bottom: 10px;
+		   }
+		   .content li{
+		   	margin-bottom:3px;
+		   }
+		</style>
+	</head>
+	<body>
+		<!--创建一个外部div容纳整个内容-->
+		<div class="outer">
+			<!--头部-->
+			<div class="title">
+				<a href="#">19年面授开班计划</a>
+				<h3>近期开班</h3>
+			</div>
+			<!--内容区-->
+			<div class="content">
+				   <h3><a href="#">JavaEE+云计算-全程就业班</a></h3>
+			<ul>
+				<li>
+					<a href="#">开班时间：<span class="red">2019-04-27</span></a>
+					<a href="#" class="right"><span class="red">预约报名</span></a>
+				</li>
+				<li>
+					<a href="#">开班时间：<span class="red">2019-04-20</span></a>
+					<a href="#" class="right"><span class="red">无座，名额饱满</span></a>
+				</li>
+				<li>
+					<a href="#">开班时间：<span >2019-03-27</span></a>
+					<a href="#" class="right"><span >开班盛况</span></a>
+				</li>
+				<li>
+					<a href="#">开班时间：<span >2019-02-25</span></a>
+					<a href="#" class="right"><span >开班盛况</span></a>
+				</li>
+				<li>
+					<a href="#">开班时间：<span>2019-02-17</span></a>
+					<a href="#" class="right"><span >开班盛况</span></a>
+				</li>
+				
+			</ul>
+			 <h3><a href="#">Android+人工智能-全程就业班</a></h3>
+			<ul>
+				<li>
+					<a href="#">开班时间：<span class="red">2019-04-27</span></a>
+					<a href="#" class="right"><span class="red">预约报名</span></a>
+				</li>
+				<li>
+					<a href="#">开班时间：<span class="red">2019-04-20</span></a>
+					<a href="#" class="right"><span class="red">无座，名额饱满</span></a>
+				</li>
+				<li>
+					<a href="#">开班时间：<span >2019-03-27</span></a>
+					<a href="#" class="right"><span >开班盛况</span></a>
+				</li>
+				<li>
+					<a href="#">开班时间：<span >2019-02-25</span></a>
+					<a href="#" class="right"><span >开班盛况</span></a>
+				</li>
+				<li>
+					<a href="#">开班时间：<span>2019-02-17</span></a>
+					<a href="#" class="right"><span >开班盛况</span></a>
+				</li>	
+			</ul>
+			 <h3><a href="#">前端+HTML5-全程就业班</a></h3>
+			<ul class="no-border">
+				<li>
+					<a href="#">开班时间：<span class="red">2019-04-27</span></a>
+					<a href="#" class="right"><span class="red">预约报名</span></a>
+				</li>
+				<li>
+					<a href="#">开班时间：<span >2019-04-20</span></a>
+					<a href="#" class="right"><span >无座，名额饱满</span></a>
+				</li>
+						
+			</ul>
+			</div>
+			
+		</div>
+	</body>
+</html>

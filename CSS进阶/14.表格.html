@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			table{
+				margin: 0 auto;
+				
+			}
+		
+		</style>
+	</head>
+	<body>
+	
+		
+		<!--
+			tr表示行
+			td表示列
+		-->
+		<table border="1" cellspacing="3" cellpadding="3">
+			<tr>
+				<th>标题</th>
+				<th>标题</th>
+				
+			</tr>
+			<tr>
+				<!--colspan横向合并单元格-->
+				<td colspan="2">Data</td>
+				
+			</tr>
+			<tr>
+				<!--纵向合并单元格-->
+				<td rowspan="2">Data</td>
+				<td>Data</td>
+			</tr>
+			<tr>
+				
+				<td>Data</td>
+			</tr>
+		</table>
+		
+		<!--长表格
+			thead
+			tbody
+			tfoot
+			tr标签写在内部
+			浏览器中没有写tbody的，会自动添加tbody然后把tr放到tbody里
+		-->
+		<table >
+			<thead></thead>
+			<tbody></tbody>
+			<tfoot></tfoot>
+		</table>
+	</body>
+</html>

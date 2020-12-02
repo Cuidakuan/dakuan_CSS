@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*
+			css中，祖先元素中的样式也会被他的后代元素所继承
+			利用继承，将一些基本的元素设置给祖先元素
+			但是和背景设置相关的，边框相关的不会被继承
+			
+			 */
+			body{
+				font-size: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<p style="font-size:50px;">
+			我是p标签的文字
+			<span>我是span的文字</span>
+		</p>
+		<span>我是p元素外的span的文字</span>
+	</body>
+</html>

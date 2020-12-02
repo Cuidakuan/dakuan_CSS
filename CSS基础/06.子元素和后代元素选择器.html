@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+		/*为div的span背景设置绿色
+		 后代元素选择器
+		     -选择我指定元素的指定后代元素
+		     语法：
+		     祖先元素  后代元素{}
+		   */
+		  div span{
+		  	background-color: red;
+		  }
+		  /*
+		   为div的子元素span设置背景颜色
+		   子元素选择器
+		      只选择儿子不选择孙子
+		    语法：
+		    父元素 > 子元素
+		  */
+		 div>span{
+		 	background-color: greenyellow;
+		 }
+		</style>
+	</head>
+	<body>
+		<div>
+			我是div<br />
+			<span>我是div的span</span>
+			<p>我是p<br/><span>我是p的span</span></p>
+		</div>
+	 	<span>我是body的span</span>
+	</body>
+</html>

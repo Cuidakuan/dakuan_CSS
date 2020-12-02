@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*
+			设置颜色用color
+			 */
+			
+			/*颜色值
+				英文单词：
+				  red
+				  green
+				  blue
+			    RGB值  红，绿，蓝
+			      rgb(0,255,255);
+			      rgb(100%,50%,50%);
+			    十六进制值
+			      #000000-#ffffff 
+				
+						 
+			 * */
+			
+			/*
+			 font-size 设置文字大小,一般默认16px
+			 font-family 设置文字字体  
+			 font-style 用来设置文字的倾斜 normal italic oblique
+			 font-weight 用来设置文本的加粗效果  normal，bold
+			 font-variant 用来设置小型大写字母显示  normal small-caps
+			 */
+			.p1{
+				color: red;
+				color:rgb(0,255,255);
+				font-size: 20px;
+				font-family: "微软雅黑";
+			}
+			.p2{
+				/*使用font设置字体相关的所有样式
+				 可以将字体听一些在font样式中，使用空格隔开
+				 斜体 加粗 小大写字母 没有顺序要求，甚至可以不写 
+				 文字的大小和字体缺一不可
+				 
+				 font属性中也可以设置行高
+				 字体大小/行高  60px/70px
+				  */
+				font: italic small-caps bold 60px/70px"微软雅黑";
+			
+		</style>
+	</head>
+	<body>
+		<p class="p1">我是一段文字，ABCDEFG</p>
+		<p class="p2">我是一段文字，ABCDEFGabcdefg</p>
+	</body>
+</html>

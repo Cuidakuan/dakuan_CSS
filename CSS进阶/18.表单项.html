@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<form action="19.提交表单.html">
+			<!--
+				通过fildset对表单进行分组
+			-->
+			<fieldset>
+				<!--指定组名-->
+				<legend>用户信息</legend>
+				<!--lable标签
+			   提示文字
+			   -->
+			   <label for="um"> 用户名：</label>
+     
+      <input id="um" type="text" /><br />
+      密&ensp; &ensp;码：<input type="text" /><br />
+			</fieldset>
+			
+		<!--创建一个单选按钮
+			radio
+			name属性分组
+			需要用户选择不需要用户直接填写内容的
+			     要指定一个value属性
+			默认选中  chencked="checked"
+		-->
+		
+		<label for="sex">性别：</label>
+		<input type="radio" name="gender" value="male"    />男
+		<input type="radio" name="gender"  value="female" checked="checked"/>女
+		<br />
+		
+		
+		<!--多选按钮
+			checkbox
+			name分组
+			value赋值用于传值
+		-->
+		爱好：
+		<input type="checkbox" name="hobby"
+			value="zq"/>足球
+		<input type="checkbox"name="hobby"
+			value="wq"/>网球
+		<input type="checkbox"name="hobby"
+			value="ymq" checked="checked"/>羽毛球
+		<input type="checkbox" name="hobby" value="lq"/>篮球
+		<input type="checkbox"name="hobby"
+			value="pq"/>排球
+		<br />
+		
+		<!--下拉列表
+			select
+			   用option创建选项
+			   下拉列表：
+			        name指定给select标签
+			        value指定给option选项
+			select="select"设置默认选中
+			multiple="multiple"多选下拉列表
+		-->
+		
+	
+		喜欢的颜色：
+		<select name="color">
+				<!--选项分组-->
+		<optgroup label="分组名">
+			<option value="red" >红色</option>
+			<option value="green">绿色</option>
+		</optgroup>
+			
+			<option value="blue"selected="selected">蓝色</option>
+			
+		</select>
+		<br/>
+		
+		<!--多行文本框-->
+		<textarea name="info"></textarea><br />
+		<input type="submit" />
+		<input type="reset" />
+		<input type="button" value="单纯按钮" />
+		<button type="">提交</button>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.p1{
+				background-color: red;
+			}
+			p{
+				background-color: yellow;
+			}
+			#p2{
+				background-color: blue;
+			}
+			/*
+			 选择器的优先级
+			  不同的选择器设置相同的样式，会产生冲突，优先级高的优先显示
+			优先级的规则
+			        内联样式      优先级1000
+			    id选择器     优先级100
+				类和伪类      优先级10
+			 	元素选择器  优先级1
+			         通配*     优先级0
+			         继承             没有优先级
+			         
+		可以再样式的最后 添加上   !important
+		则此时该样式获得最高优先级，超过内联
+			*/
+			
+			
+	    /*伪类的顺序
+	     :link
+	     :visited
+	     :hover
+	     :active
+	         优先级是一样的
+	         谁在下面显示谁
+	     * */
+		</style>
+	</head>
+	<body>
+		<p class="p1" id="p2">我是一个段落</p>
+	</body>
+</html>

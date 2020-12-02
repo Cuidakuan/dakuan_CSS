@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>css</title>
+		<!--将css写到head中的style标签里
+			内部样式
+		
+		<style type="text/css">
+			p{
+				color:red;
+				font-size: 20px;
+			}
+		</style>-->
+		
+		<!--还可以将样式表编写到外部css文件中
+			通过link标签引入外部css样式
+			，这样写的好处，完全使结构和表现分离
+			  使样式表可以最大限度复用
+			  开发中优先使用这种方式
+		-->
+		<link rel="stylesheet" href="02.style.css" />
+	</head>
+	<body>
+		<!--可以将样式编写到元素的style属性中
+			 将样式写到style属性中，这种样式成为内联样式
+			 内联样式只对当前元素起作用
+			
+			内联样式结构与表现耦合，不推荐使用
+		-->
+		<!--<p style="color:red;font-size: 50px;">这是css样式</p>-->
+		
+		<p >这是css样式</p>
+		<p >这是css样式</p>
+		<p >这是css样式</p>
+		<p >这是css样式</p>
+		<p >这是css样式</p>
+	</body>
+</html>

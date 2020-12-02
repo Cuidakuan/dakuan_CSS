@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*属性Hack
+			    不建议使用Hack，有风险
+			     * 
+			     * 
+			     * */
+			body{
+				/*假设在IE不通的版本才显示属性
+				     IE6以下才能识别加：_
+				        _background-color: yellow;
+				    IE7以下才能识别加：*
+				     *background-color: yellow;  
+				    \9
+				        IE6以上
+				          background-color: yellow\9;
+				    \0 
+				         IE8以上
+				           background-color: yellow\0;
+				*/
+				*background-color: yellow;
+			}
+		</style>
+	</head>
+	<body>
+		<!--
+			有一些情况，代码只需要在某些特殊的浏览器中执行，其他浏览器不执行，此时用CSS Hack 
+		-->
+		<!--
+			条件Hack，条件Hack只对IE浏览器有效，其他浏览器将其识别为注释
+			IE10及以上的不支持
+		-->
+		<!--[if IE]>
+			<p>珍爱生命，远离IE6</p>
+		<![endif]-->
+	
+		<!--[if lte IE 8]>
+		  lt大于，  gt小于，     lte 大于等于
+		<![endif]-->
+		
+		<!--[if IE *]>
+			* 表示IE几，在IE几种才能显示此段代码
+		<![endif]-->
+		
+		<!--[if !IE 8]>
+			<p>你的浏览器不是IE8</p>
+		<![endif]-->
+		
+	</body>
+</html>

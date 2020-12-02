@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+		/*
+		选择第一个子标签
+		    :first-child{}
+		选择最后一个子标签
+		    :last-child{}
+		选指定一个子标签,参数写在小括号内
+		    :nth-child(){}*/
+		
+		/*
+		 * 整个p类型中
+		p:first-of-type{}
+		p:last-of-type{}
+		p:nth-of-type(){}
+		 */
+		/*p:nth-of-type(5){
+			background-color: red;
+		}*/
+		
+		
+		/*兄弟选择器
+		选择span后的紧挨着的指定的元素
+		span+p{
+			background-color: red;
+		}*/
+		/*选择span后所有的指定的元素*/
+		span~p{
+			background-color: red;
+		}
+		</style>
+	</head>
+	<body>
+	    <p>我是一段文字</p>
+		<p>我是一段文字</p>
+		<p>我是一段文字</p>
+		<span>我是span</span>
+		<p>我是一段文字</p>
+		<p>我是一段文字</p>
+		<p>我是一段文字</p><div>
+			我是div
+		</div>
+		<p>我是一段文字</p>
+		<p>我是一段文字</p>
+	</body>
+</html>
